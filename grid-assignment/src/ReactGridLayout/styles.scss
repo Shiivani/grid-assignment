@@ -1,0 +1,57 @@
+$gap: 10px;
+.grid {
+  width: calc(100vw - 30px);
+  height: 100vh;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: $gap;
+  margin: 10px 0 10px 8px;
+  .box {
+    background-color: #00ff;
+    border-radius: 2px;
+    color: #fff;
+    font-size: 14px;
+    line-height: 80px;
+    height: 80px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    text-align: center;
+    &.col-1 {
+      flex: 0 0 100%;
+    }
+    &.col-2 {
+      flex-basis: calc(calc(100% / 2) - calc($gap / 2));
+    }
+    &.col-3 {
+      flex-basis: calc(calc(100% / 3) - calc($gap / 3 * 2));
+    }
+    &.col-4 {
+      flex-basis: calc(calc(100% / 4) - calc($gap / 4 * 3));
+    }
+    &.col-5 {
+      flex-basis: calc(calc(100% / 5) - calc($gap / 5 * 4));
+    }
+    &.col-6 {
+      flex-basis: calc(calc(100% / 6) - calc($gap / 6 * 5));
+    }
+    &.col-7 {
+      flex-basis: calc(calc(100% / 7) - calc($gap / 7 * 6));
+    }
+    &.col-8 {
+      flex-basis: calc(calc(100% / 8) - calc($gap / 8 * 7));
+    }
+    &.col-9 {
+      flex-basis: calc(calc(100% / 9) - calc($gap / 9 * 8));
+    }
+    &.col-10 {
+      flex-basis: calc(calc(100% / 10) - calc($gap / 10 * 9));
+    }
+    &.col-11 {
+      flex-basis: calc(calc(100% / 11) - calc($gap / 11 * 10));
+    }
+    &.col-12 {
+      flex-basis: calc(calc(100% / 12) - calc($gap / 12 * 11));
+    }
+  }
+}
