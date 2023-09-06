@@ -2,6 +2,7 @@
   "name": "grid-assignment",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://Shiivani.github.io/grid-assignment",
   "dependencies": {
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^13.5.0",
@@ -17,6 +18,8 @@
   },
   "scripts": {
     "start": "react-scripts start",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "build": "react-scripts build"
   },
   "eslintConfig": {
@@ -37,6 +40,7 @@
     ]
   },
   "devDependencies": {
+    "gh-pages": "^6.0.0",
     "sass": "^1.66.1"
   }
 }
