@@ -1,6 +1,7 @@
 .dropdown-wrapper {
   width: 200px;
   margin: 5px;
+  position: relative;
   .label-wrapper {
     display: flex;
     border: 1px solid #00ff;
@@ -45,6 +46,8 @@
     }
   }
   .options-wrapper {
+    position: absolute;
+    z-index: 1;
     width: 100%;
     border-radius: 8px;
     padding: 5px;
